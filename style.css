@@ -14,7 +14,7 @@ body {
     min-height: 100vh;
 }
 
-.card {
+main {
     background-color: white;
     display: flex;
     
@@ -22,13 +22,13 @@ body {
     border-bottom-left-radius: 10px;
 }
 
-.card>img{
+main>img{
     max-width: 300px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
-.card .content {
+main .content {
     padding: 20px;
     width: 250px;
     display: flex;
@@ -36,7 +36,7 @@ body {
     justify-content: space-evenly;
 }
 
-.card .content .categorie{
+main .content .categorie{
     letter-spacing: 4px;
     font-family: 'Montserrat', sans-serif;
     color: hsl(228, 12%, 48%);
@@ -44,7 +44,7 @@ body {
     font-size: 0.8rem;
 }
 
-.card .content .title{
+main .content .title{
     font-family: 'Fraunces', sans-serif;
     color: hsl(212, 21%, 14%);
     font-weight: 700;
@@ -52,21 +52,21 @@ body {
     line-height: 35px;
 }
 
-.card .content>p {
+main .content>p {
     font-family: 'Montserrat', sans-serif;
     color: hsl(228, 12%, 48%);
     font-weight: 500;
     font-size: 0.8rem;
 }
 
-.card .content .price {
+main .content .price {
     display: flex;
     align-items: center;
     width: 175px;
     justify-content: space-between;
 }
 
-.card .content .price .currentPrice {
+main .content .price .current-price {
     font-family: 'Fraunces', sans-serif;
     color: hsl(158, 36%, 37%);
     font-weight: 700;
@@ -74,15 +74,14 @@ body {
     
 }
 
-.card .content .price .oldPrice {
-    text-decoration: line-through;
+main .content .price .old-price {
     font-family: 'Montserrat', sans-serif;
     color: hsl(228, 12%, 48%);
     font-weight: 500;
     font-size: 0.8rem;
 }
 
-.card .content .add {
+main .content .add {
     border: 0;
     background-color: hsl(158, 36%, 37%);
     border-radius: 6px;
@@ -94,22 +93,22 @@ body {
     cursor: pointer;
 }
 
-.card .content .add:hover{
+main .content .add:hover{
     background-color: #204434;
 }
 
-.card .content .add>img {
+main .content .add>img {
     margin-right: 10px;
 }
 
-.card .content .add>p {
+main .content .add>p {
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
 
  @media screen and (max-width:550px) {
-    .card {
+    main {
         
         flex-direction: column;
         border-top-right-radius: 10px;
@@ -118,19 +117,18 @@ body {
         height: auto;  
     }
 
-    .card>img {
+    main>img {
         max-width: 350px;
-        content: url("./Images/image-product-mobile.jpg");
         border-bottom-left-radius: 0;
         border-top-right-radius: 10px;
     }
-    .card .content {
+    main .content {
         padding: 10px;
         width: 100%;
         max-width: 350px;
     }
 
-    .card .content>* {
+    main .content>* {
         margin: 10px 0;
     }
 
